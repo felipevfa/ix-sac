@@ -1,0 +1,735 @@
+/* =======================================
+             ESTRUTURA GERAL
+========================================== */
+
+p { line-height: 20px; }
+
+/* =======================================
+				         HEADER
+========================================== */
+
+header {
+	background-color: rgb(255,107,0);
+	max-height: 215px;
+}
+
+header img {
+	width: 100%;
+	max-height: 215px;
+	max-width: 480px;
+}
+
+#triangle {
+  display: none;
+}
+
+
+@media (min-width: 768px) {
+  #logo {
+    float: left;
+  }
+
+  #triangle {
+    display: block;
+    float: right;
+  }
+}
+
+/* =======================================
+				         SOBRE
+========================================== */
+
+.about {
+	max-width: 100%;
+	background-color: rgb(94,109,112);
+
+  font-size: 1.05em;
+  font-weight: lighter;
+}
+
+.content {
+	color: white;
+	font-family: "Open Sans", sans-serif;
+  padding: 20px;
+
+	margin: 0 auto;
+  max-width: 800px;
+}
+
+@media (min-width: 769px) {
+	.content {
+		font-size: 0.9em;
+	}
+
+}
+
+/* =======================================
+			         PALESTRANTES
+========================================== */
+
+.lecturers {
+	max-width: 100%;
+	background-color: rgb(66,78,79);
+}
+
+#lecturetitle {
+	float: right;
+ 
+  margin-top: 0.3em;
+	margin-bottom: 0.7em;
+  margin-right: 12px;
+
+	text-transform: lowercase;
+
+	font-size: 50px;
+  font-family: 'Open Sans', sans-serif;
+
+	color: white;
+
+}
+
+.lecturer {
+  background: rgb(255,107,0);
+	width: 130px;
+	height: 130px;
+
+  margin-left: 11px;
+  margin-right: 11px; 
+	margin-bottom: 3.7em;
+
+  border: 2px solid rgb(255,107,0);
+}
+
+@media (max-width: 600px) {
+  #lecturetitle {
+    float: left;
+  }
+
+  .lecturer {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+/*@media (max-width: 391px) {
+  .lecturer {
+    margin-right: 24px;
+  }
+}
+
+@media (min-width: 400px) {
+  .lecturer {
+    margin-right: 24px;
+  }
+}*/
+
+.lecturer img {
+	max-width: 100%;
+  max-height: 100%;
+}
+
+.lecturer figcaption {
+	text-align: left;
+	margin-top: 0.3em;
+}
+
+.lecturers .content {
+    max-width: 800px;
+}
+
+.lecturerdesc {
+  font-size: 1.05em;
+  font-weight: lighter;
+
+  color: rgb(238,238,239);
+  margin-bottom: 30px;
+}
+
+section {
+  position: fixed;
+  top: -9999px;
+  left: -9999px;
+  visibility: hidden;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+section.active {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: visible;
+  opacity: 0;
+  opacity: 1;
+
+  z-index: 999;
+}
+
+section .content {
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 40px;
+  line-height: 1.4;
+  background-color: rgb(94,109,112);
+  overflow-y: scroll;
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+  -moz-transition: opacity 0.2s, -moz-transform 0.2s;
+  -o-transition: opacity 0.2s, -o-transform 0.2s;
+  transition: opacity 0.2s, transform 0.2s;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+section .content a.close {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(255,102,0);
+  color: #fff;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+}
+
+section .content a.close:hover {
+  background-color: rgb(193,59,0);
+}
+
+section.active .content {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+article h2 {
+  margin-bottom: 10px;
+  color: #323232;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+}
+article p {
+  margin-bottom: 20px;
+}
+article p:last-child {
+  margin-bottom: 0;
+}
+
+.lattes a {
+  text-align: center;
+
+  font-weight: lighter;
+
+  text-decoration: none;
+
+  color: white;
+}
+
+.lattes a:visited {
+  text-decoration: none;
+
+  color: white;
+}
+
+.lattes a:hover {
+  text-decoration: underline;
+}
+
+
+/* =======================================
+			         PROGRAMAÇÃO
+========================================== */
+
+.user-content {
+  width: 100%;
+  background-color: rgb(255,107,0);
+}
+
+#eventstitle {
+ 
+  margin-top: 0.3em;
+  margin-bottom: 0.7em;
+  margin-right: 12px;
+  margin-left: 5px;
+
+  text-transform: lowercase;
+  text-align: left;
+
+  font-size: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+
+  color: rgb(66,78,79);
+}
+
+@media (max-width: 400px) {
+  #eventstitle {
+    margin-left: -16px;
+  }
+}
+
+/* =======================================
+            SUB-ÁREA: EVENTOS;
+========================================== */
+
+.events {
+  width: 100%;
+  background-color: rgb(94, 109, 112);
+
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (min-width: 600px) {
+  .events {
+    margin: 0 auto;
+  }
+}
+
+nav.cmn-overlays-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav.cmn-overlays-nav li {
+  display: block;
+  margin: 0 0 3px 0;
+}
+
+nav.cmn-overlays-nav a {
+  display: block;
+  padding: 15px;
+  color: #fff;
+  background-color: rgb(66,78,79);
+  text-align: left;
+  text-decoration: none;
+  text-transform: lowercase;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+@media (min-width: 600px) {
+
+  nav.cmn-overlays-nav a {
+    width: 96%;
+    margin: 0.2em auto;
+    
+  }
+}
+
+nav.cmn-overlays-nav a:hover {
+  background-color: rgb(40,40,40);
+}
+
+@media all and (min-width: 600px) {
+  nav.cmn-overlays-nav ul {
+    padding-left: 1px;
+  }
+  nav.cmn-overlays-nav li {
+    float: left;
+    width: 50%;
+  }
+  nav.cmn-overlays-nav li:nth-child(2n+1) {
+    margin: 0 1px 1px -1px;
+  }
+}
+
+/* =======================================
+            SUB-ÁREA: MINICURSOS;
+========================================== */
+
+.courses {
+  background-color: rgb(66,78,79);
+}
+
+@media (min-width: 600px) {
+  .courses {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+#coursestitle {
+  font-size: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+
+  margin-top: 0.3em;
+  margin-bottom: 0.7em;
+
+  color: rgb(94,109,112);
+
+  text-transform: lowercase;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  #coursestitle {
+    text-align: right;
+  }
+}
+.course {
+ 
+  /*border: 2px solid rgb(40,40,40);*/
+
+  width: 120px;
+  height: 120px;
+
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+
+}
+
+.course-list {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  .course {
+    margin: 0 auto;
+    float: none;
+    display: inline-block;
+  }
+
+  .course {
+    float: none;
+  }
+
+}
+
+.course figure img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.course figure figcaption {
+  text-align: center;
+  margin-top: 0.3em;
+}
+
+/* =======================================
+              INSCRIÇÕES
+========================================== */
+
+.subscription {
+  background-color: rgb(255,107,0);
+}
+
+.subscribe {
+  max-width: 800px;
+  background-color: rgb(40,40,40);
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.subscribe a {
+  text-decoration: none;
+  text-align: right;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4em;
+  font-weight: normal;
+
+  color: white;
+}
+
+.subscribe img {
+  width: 100%;
+  
+  max-width: 99px;
+  max-height: 98px;
+  
+  float: right;
+
+  margin: 0 30px;
+}
+
+.subscribe p {
+  text-align: right;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 42px;
+
+  margin: 0;
+
+  color: white;
+
+  line-height: 20px;
+}
+
+#desc {
+  margin-top: 1.5em;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+@media (max-width: 600px) {
+  .subscribe p {
+    font-size: 40px;
+  }
+
+  .subscribe img {
+    margin: 0 10px;
+  }
+
+  #desc {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+
+label {
+  width: 300px;
+  vertical-align: top;
+}
+
+.courselist label {
+    margin-bottom: 1em;
+}
+
+input[type="checkbox"] {
+  width: 40px;
+  float: left;
+  margin-bottom: 1em;
+}
+
+input[type="submit"] {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(255,107,0);
+  
+  color: white;
+
+  padding: 5px;
+  border: none;
+
+  margin: 0 auto;
+}
+
+select {
+  margin-bottom: 1em;
+}
+
+/* =======================================
+                  FOOTER
+========================================== */
+
+footer {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.footer-content {
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 1024px;
+}
+
+#logopet img {
+  margin-top: 1em;
+  float: left;
+  width: 100%;
+
+  max-width: 392px;
+  max-height: 106px;
+}
+
+@media (min-width: 600px) {
+  #logopet img {
+    margin-left: -11px;
+  }
+}
+
+.contact {
+  color: rgb(94,109,112);
+
+  max-width: 800px;
+  margin: 0 auto;
+
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+}
+
+#adress {
+  float: left;
+}
+
+@media (min-width: 600px) {
+  #social {
+    float: right;
+  }
+}
+
+#social figure figcaption {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -15px;
+}
+
+#support {
+  margin-top: 20px;
+  float: left;
+  width: 50%;
+}
+
+#support h1 {
+  color: white;
+
+  text-transform: uppercase;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9em;
+  font-weight: lighter;
+
+  letter-spacing: 5px;  
+
+  margin-left: 0.2em;
+  margin-bottom: 0.5em;
+}
+
+#ufc img {
+  max-width: 251px;
+  max-height: 68px;
+}
+
+.sponsors {
+
+}
+
+#sponsors h1 {
+  color: white;
+
+  text-transform: uppercase;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: lighter;
+
+  margin-left: 0.2em;
+  margin-bottom: 0.5em;
+}
+
+.sponsor-list {
+  width: 97%;
+  margin: 0 auto;
+
+  background-color: rgb(204,0,133);
+}
+
+.sponsor-list  {
+  text-align: center;
+
+  font-size: 2em;
+  font-family: 'Open Sans', sans-serif;
+
+  margin: 15px;
+  padding-bottom: 0.5em;
+  color: white;
+}
+
+@media (min-width: 600px) {
+  .sponsor-list  {
+    font-size: 4em;
+  }
+}
+
+
+/* =======================================
+                INSCRIÇÃO
+========================================== */
+
+label {
+  display: block;
+}
+
+input {
+  width: 55%;
+  margin-bottom: 1em;
+}
+
+/* =======================================
+                 PALESTRAS
+========================================== */
+
+.lecture p {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.lecture {
+  border-bottom: 2px solid rgb(66,78,79);
+  margin-bottom: 10px;
+}
+
+.lecture .time {
+  font-size: 13px;
+  font-weight: lighter;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.lecture .title {
+  font-size: 25px;
+  font-weight: bold;
+
+  line-height: 24px;
+
+  text-transform: uppercase;
+
+  color: rgb(40,40,40);
+
+}
+
+.lecture .author {
+  font-size: 16px;
+  font-weight: lighter;
+  color: rgb(40,40,40);
+
+  margin-bottom: 15px;
+}
+
+.lecture .description {
+  font-size: 1.05em;
+  font-weight: lighter;
+
+  color: rgb(238,238,239);
+  margin-bottom: 30px;
+}
+
+@media (min-width: 600px) {
+  .lecture .description {
+    margin-left: 30px;
+  } 
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>IX SAC - Emissão de Certificados</title>
+		<meta charset="UTF-8">
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="css/basic.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<section id="disclaimer" class="active">
+			<div class="content distant-from-top">
+				<p class="title">LEIA!</p>
+				<p>A IX Semana Acadêmica da Computação contou com 14 (quatorze) palestras, 5 (cinco) minicursos e 1 (uma) atividade socio-esportiva. Caso tenha participado de pelo menos metade dessas atividades, somando as respectivas cargas horárias, você receberá um certificado de participação do evento, no qual constará a dita carga horária.</p>
+
+				<p>Caso você não tenha atingido a cota mínima de metade da carga horária do evento, será emitida apenas uma declaração de presença especificando em quais atividades, datas e horários você esteve presente.</p>
+
+				<p>Vale lembrar que tanto pra receber o certificado como para receber a declaração, é necessário que tenha feito sua inscrição na página do evento até o dia 08 (oito)  de agosto e assinado as listas de presença. Não ter realizado um desses dois passos, ou os dois, implica na não emissão do documento que comprove sua participação. Não haverá exceção a esta condição.</p>
+
+				<p>Os alunos da disciplina Introdução a Lógica Matemática, ministrada pelo professor João Fernando, só receberão a presença de segunda-feira (quatro de agosto) se tiverem comparecido ao minicurso Modelagem NoSQL Escalável com Apache Cassandra e assinado a lista de presença.</p>
+
+				<p>É de inteira responsabilidade do aluno apresentar ao professor sua justificativa de falta (certificado de participação ou declaração de presença emitidos pelo evento), se houver sido ministrada aula no período de 04 (quatro) a 08 (oito) de agosto. As declarações e certificados serão emitidos com os dados informados na página de inscrição do evento.</p>
+
+				<a href="#" id="btn_require" class="button">Requisitar certificado</a>
+				<div class="clear"></div>
+			</div>
+		</section>
+		
+		<section id="require-certificate">
+			<div class="form-table">
+				<form action="search-certificate.php" id="order-certificate" method="POST">
+					<label for="user_name">Nome</label>
+					<input type="text" id="user_name" name="user_name"
+						placeholder="Nome completo, conforme identificação" required>
+
+					<label for="user_id">Número de Identificação</label>
+					<input type="number" id="user_id" name="user_id" 
+						placeholder="RG, CPF ou CIA registrado na SAC" required>
+
+					<a href="#" id="btn_certificate" class="button">Buscar certificado</a>
+					<div class="clear"></div>
+				</form>
+			</div>
+		</section>
+
+		<section id="feedback">
+			<div class="content distant-from-top">
+			<p>Esta é uma breve avaliação da IX Semana Acadêmica da Computação. O preenchimento deste formulário é obrigatório para a obtenção do seu certificado - entenda, é necessário um feedback para melhorarmos ainda mais a semana acadêmica do nosso curso. Agradecemos a sua paciência!</p>
+		</div>
+
+		
+		<div class="form-table-google">
+			<script type="text/javascript">var submitted=false;</script>
+			<iframe name="hidden_iframe" id="hidden_iframe"
+				style="display:none;" onload="if(submitted)
+				{window.location='#';}"></iframe>
+			<form action="https://docs.google.com/forms/d/1vzn5lCtffXyQchn_AalLS_p7QsvFnIxA0jY1ji1uCNc/formResponse" method="post"
+			target="hidden_iframe" onsubmit="submitted=true;" id="feedback_sac"><ol role="list" class="ss-question-list" style="padding-left: 0">
+				<div class="ss-form-question errorbox-good" role="listitem">
+				<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry">
+				<label class="ss-q-item-label" for="entry_1232705723"><div class="ss-q-title top">Qual sua opinião sobre a seleção de temas para as palestras da IX SAC?
+				<label for="itemView.getDomIdToLabel()" aria-label="(campo obrigatório)"></label></div>
+				<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+				<div class="required-message">Esta pergunta é obrigatória.</div>
+				<ul class="ss-choices" role="radiogroup" aria-label="Qual sua opinião sobre a seleção de temas para as palestras da IX SAC?  "><li class="ss-choice-item"><label><span class="ss-choice-item-control  goog-inline-block"><input type="radio" name="entry.1757877824" value="&Oacute;tima" id="group_1757877824_1" role="radio" class="ss-q-radio" aria-label="&Oacute;tima" required="" aria-required="true"></span>
+				<span class="ss-choice-label">Ótima</span>
+				</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1757877824" value="Boa" id="group_1757877824_2" role="radio" class="ss-q-radio" aria-label="Boa" required="" aria-required="true"></span>
+				<span class="ss-choice-label">Boa</span>
+				</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1757877824" value="Regular" id="group_1757877824_3" role="radio" class="ss-q-radio" aria-label="Regular" required="" aria-required="true"></span>
+				<span class="ss-choice-label">Regular</span>
+				</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1757877824" value="Razo&aacute;vel" id="group_1757877824_4" role="radio" class="ss-q-radio" aria-label="Razo&aacute;vel" required="" aria-required="true"></span>
+				<span class="ss-choice-label">Razoável</span>
+				</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1757877824" value="Ruim" id="group_1757877824_5" role="radio" class="ss-q-radio" aria-label="Ruim" required="" aria-required="true"></span>
+				<span class="ss-choice-label">Ruim</span>
+				</label></li></ul>
+				<div class="error-message" id="1232705723_errorMessage"></div>
+				</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+				<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry">
+				<label class="ss-q-item-label" for="entry_600815388"><div class="ss-q-title">Qual sua opinião sobre a seleção de minicursos para a IX SAC?
+				<label for="itemView.getDomIdToLabel()" aria-label="(campo obrigatório)"></label></div>
+				<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+				<div class="required-message">Esta pergunta é obrigatória</div>
+				<ul class="ss-choices" role="radiogroup" aria-label="Qual sua opinião sobre a seleção de minicursos para a IX SAC?  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.985220299" value="&Oacute;tima" id="group_985220299_1" role="radio" class="ss-q-radio" aria-label="&Oacute;tima" required="" aria-required="true"></span>
+				<span class="ss-choice-label">Ótima</span>
+				</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.985220299" value="Boa" id="group_985220299_2" role="radio" class="ss-q-radio" aria-label="Boa" required="" aria-required="true"></span>
+				<span class="ss-choice-label">Boa</span>
+				</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.985220299" value="Regular" id="group_985220299_3" role="radio" class="ss-q-radio" aria-label="Regular" required="" aria-required="true"></span>
+				<span class="ss-choice-label">Regular</span>
+				</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.985220299" value="Razo&aacute;vel" id="group_985220299_4" role="radio" class="ss-q-radio" aria-label="Razo&aacute;vel" required="" aria-required="true"></span>
+				<span class="ss-choice-label">Razoável</span>
+				</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.985220299" value="Ruim" id="group_985220299_5" role="radio" class="ss-q-radio" aria-label="Ruim" required="" aria-required="true"></span>
+				<span class="ss-choice-label">Ruim</span>
+				</label></li></ul>
+				<div class="error-message" id="600815388_errorMessage"></div></div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+				<div dir="ltr" class="ss-item ss-item-required ss-radio"><div class="ss-form-entry">
+				<label class="ss-q-item-label" for="entry_953797790"><div class="ss-q-title">Qual sua opinião sobre a organização do evento?
+				<label for="itemView.getDomIdToLabel()" aria-label="(campo obrigatório)"></label></div></label>
+				<div class="required-message">Esta pergunta é obrigatória</div>
+				<ul class="ss-choices" role="radiogroup" aria-label="Qual sua opinião sobre a organização do evento? Neste quesito, leve em conta a pontualidade das palestras, organização das presenças, a rapidez dos organizadores em fornecer respostas e ajuda durante o evento, entre outros. "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1685330929" value="&Oacute;tima" id="group_1685330929_1" role="radio" class="ss-q-radio" aria-label="&Oacute;tima" required="" aria-required="true"></span>
+				<span class="ss-choice-label">Ótima</span>
+				</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1685330929" value="Boa" id="group_1685330929_2" role="radio" class="ss-q-radio" aria-label="Boa" required="" aria-required="true"></span>
+				<span class="ss-choice-label">Boa</span>
+				</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1685330929" value="Regular" id="group_1685330929_3" role="radio" class="ss-q-radio" aria-label="Regular" required="" aria-required="true"></span>
+				<span class="ss-choice-label">Regular</span>
+				</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1685330929" value="Razo&aacute;vel" id="group_1685330929_4" role="radio" class="ss-q-radio" aria-label="Razo&aacute;vel" required="" aria-required="true"></span>
+				<span class="ss-choice-label">Razoável</span>
+				</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1685330929" value="Ruim" id="group_1685330929_5" role="radio" class="ss-q-radio" aria-label="Ruim" required="" aria-required="true"></span>
+				<span class="ss-choice-label">Ruim</span>
+				</label></li></ul>
+				<div class="error-message" id="953797790_errorMessage"></div>
+				</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+				<div dir="ltr" class="ss-item  ss-radio"><div class="ss-form-entry">
+				<label class="ss-q-item-label" for="entry_1645719449"><div class="ss-q-title">Você considera que a IX SAC apresentou melhorias em relação a VIII SAC?
+				</div>
+				<div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
+				<div class="required-message">Esta pergunta é obrigatória</div>
+				<ul class="ss-choices" role="radiogroup" aria-label="Você considera que a IX SAC apresentou melhorias em relação a VIII SAC?  "><li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.797864541" value="Sim" id="group_797864541_1" role="radio" class="ss-q-radio" aria-label="Sim"></span>
+				<span class="ss-choice-label">Sim</span>
+				</label></li> <li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.797864541" value="N&atilde;o" id="group_797864541_2" role="radio" class="ss-q-radio" aria-label="N&atilde;o"></span>
+				<span class="ss-choice-label">Não</span>
+				</label></li></ul>
+				<div class="error-message" id="1645719449_errorMessage"></div>
+				</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+				<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+				<label class="ss-q-item-label" for="entry_818967167"><div class="ss-q-title">Sugestões
+				</div>
+				<div class="ss-q-help ss-secondary-text required-message" dir="ltr">Escreva aqui qualquer sugestão para a X Semana Acadêmica da Computação, desde melhorias na organização até temas para palestras ou minicursos. Este campo não é obrigatório.</div></label>
+				<div class="suggestions"><input type="text" name="entry.818967167" value="" class="ss-q-short" id="entry_818967167" dir="auto" aria-label="Sugestões Escreva aqui qualquer sugestão para a X Semana Acadêmica da Computação, desde melhorias na organização até temas para palestras ou minicursos. Este campo não é obrigatório." title=""></div>
+				<div class="error-message" id="1712124939_errorMessage"></div>
+				</div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+				<div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry">
+				<label class="ss-q-item-label" for="entry_755898001"><div class="ss-q-title">Contato
+				</div>
+				<div class="ss-q-help ss-secondary-text required-message" dir="ltr">Deixe aqui seu e-mail para eventualmente entrarmos em contato quanto ao seu feedback. Este campo não é obrigatório.</div></label>
+				<input type="text" name="entry.755898001" value="" class="ss-q-short" id="entry_755898001" dir="auto" aria-label="Contato Deixe aqui seu e-mail para eventualmente entrarmos em contato quanto ao seu feedback. Este campo não é obrigatório. " title="">
+				<div class="error-message" id="1825875372_errorMessage"></div>
+				</div></div></div>
+				<input type="hidden" name="draftResponse" value="[,,&quot;-4424406680033782969&quot;]
+				">
+				<input type="hidden" name="pageHistory" value="0">
+
+
+				<input type="hidden" name="fbzx" value="-4424406680033782969">
+
+				<div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+				<input type="submit" name="submit" value="Enviar" id="ss-submit">
+				</td>
+				</tr></tbody></table></div></ol></form>
+			</div>
+		</section>
+
+		<section id="certificates">
+			<div class="content distant-from-top">
+				<p class="title">OBRIGADO! :D</p>
+				<p>Muito obrigado por participar da IX Semana Acadêmica da Computação! Os seus certificados estão abaixo:</p>
+
+				<div class="form-table">
+					<ul>
+					</ul>
+				</div>
+			</div>
+		</section> 
+
+		<section id="not-found">
+			<div class="content distant-from-top">
+				<p class="title">Oops! :(</p>
+				<p>Não foi possível recuperar os certificados. Verifique se você inseriu seus dados corretamente no formulário de requisição e, caso tenha, isso significa que você não se inscreveu na IX Semana Acadêmica da Computação e, portanto, não pode receber certificados de participação...</p>
+			</div>
+		</section> 
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
